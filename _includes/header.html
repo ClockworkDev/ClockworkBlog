@@ -19,8 +19,8 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %} {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> {% endif %} {% endfor
+        {% for my_page in site.pages %} {% if my_page.title %} {% if my_page.showHeader %}
+        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a> {% endif %} {% endif %}  {% endfor
         %}
         <a class="page-link" href="http://clockwork.js.org/">Clockwork</a>
       </div>

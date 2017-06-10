@@ -204,3 +204,20 @@ pre {
         }
     }
 }
+
+
+
+.postLink{
+    display:block;
+    border: 1px black solid;
+}
+
+.postLink img{
+    width:200px;
+}
+
+.postLink .details{
+    vertical-align: middle;
+    display:inline-block;
+    margin-left:20px;
+}

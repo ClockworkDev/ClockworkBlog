@@ -1,14 +1,15 @@
 ---
-layout: default
+layout: page
+title: Tags
+permalink: /tags/
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
+{% for category in site.categories %}
+  <h3 id="{{ category | first }}">Posts tagged <b>{{ category | first }}</b></h3> 
+<ul class="post-list"> 
+    {% for posts in category %}
+      {% for post in posts %}
+      {% if post.title %}
+ <li>
       <div class="postLink">
         <img src="{{ site.baseurl }}{{ post.heropic }}" />
         <div class="details">
@@ -25,9 +26,8 @@ layout: default
         </div>
       </div>
     </li>
+      {% endif %}
+      {% endfor %}
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    </ul>
+{% endfor %}

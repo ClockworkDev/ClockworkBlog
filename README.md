@@ -1,2 +1,2 @@
 # ClockworkBlog
-The official blog for the CLockwork Platform
+The official blog for the Clockwork Platform

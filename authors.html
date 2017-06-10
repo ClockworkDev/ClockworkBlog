@@ -1,14 +1,19 @@
 ---
-layout: default
+layout: page
+title: Authors
+permalink: /authors/
 ---
 
-<div class="home">
+{% for author in site.data.authors  %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
+ <a href="http://twitter.com/{{ author[1]["twitter"] }}"> 
+  <h3 id="{{ author[1]["name"] }}">Posts by <img src="{{ author[1]["pic"] }}" style="height:60px;border-radius:30px;"/> <b>{{ author[1]["name"] }}</b></h3>
+ </a>
+   
+  {% assign posts = site.posts | where: "author", author[0] %}
+<ul class="post-list"> 
+    {% for post in posts %}
+               <li>
       <div class="postLink">
         <img src="{{ site.baseurl }}{{ post.heropic }}" />
         <div class="details">
@@ -26,8 +31,6 @@ layout: default
       </div>
     </li>
     {% endfor %}
-  </ul>
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% endfor %}

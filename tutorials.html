@@ -1,14 +1,16 @@
 ---
-layout: default
+layout: page
+title: Tutorials
+permalink: /tutorials/
+showHeader: true
 ---
 
-<div class="home">
+These are some tutorials you can follow to learn how to create your own awesome games!
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
+<ul class="post-list"> 
+  {% for post in site.posts %}
+  {% if post.categories contains "tutorial" %}
+     <li>
       <div class="postLink">
         <img src="{{ site.baseurl }}{{ post.heropic }}" />
         <div class="details">
@@ -25,9 +27,6 @@ layout: default
         </div>
       </div>
     </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  {% endif %}
+  {% endfor %}
+</ul>
