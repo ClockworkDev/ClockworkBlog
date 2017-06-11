@@ -210,6 +210,14 @@ pre {
 .postLink{
     display:block;
     border: 1px black solid;
+    box-shadow: 5px 5px 10px #333;
+    background-color: #DDD;
+    transition: all 0.2s ease-in;
+}
+
+.postLink:hover{
+    background-color: #FFF;
+    box-shadow: 10px 10px 20px #333;
 }
 
 .postLink img{
@@ -220,4 +228,48 @@ pre {
     vertical-align: middle;
     display:inline-block;
     margin-left:20px;
+}
+
+@include media-query($on-palm) {
+    .postLink{
+        position:relative;
+    }
+    .postLink img{
+        width:100%;
+    }
+    .postLink .details{
+        position:absolute;
+        bottom:0px;
+        background-color: rgba(0,0,0,0.6);
+        display:block;
+        margin:0px;
+        padding:10px;
+        color:white;
+    }
+    .postLink a{
+        color:white;
+        text-decoration: underline cyan;
+    }
+
+    .postLink .post-meta{
+        color:white;
+    }
+}
+
+.page-subtitle{
+    font-weight: lighter;
+}
+
+.page-content{
+    animation: 0.5s fadein;
+}
+
+@keyframes fadein{
+    from {
+        opacity:0;
+        margin-left:-100px;
+    } to{
+        opacity:1;
+        margin-left:0px;
+    }
 }
