@@ -273,3 +273,28 @@ pre {
         margin-left:0px;
     }
 }
+
+.post-header-pretty{
+    background: black;
+    background-size:cover;
+    background-position: center;
+}
+
+.post-header-content{
+    padding:50px;
+    background: rgba(0,0,0,0.5);
+}
+
+.post-header-pretty .post-title{
+    color:white;
+}
+
+.post-header-pretty a{
+    color: cornflowerblue;
+    padding: 0px 4px 0px 4px;
+    background: rgba(0,0,0,0.5);
+}
+
+.post-header-pretty .post-meta{
+    color:white;
+}
