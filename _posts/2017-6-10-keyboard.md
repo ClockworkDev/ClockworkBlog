@@ -13,7 +13,7 @@ First of all, you will need to add the package as a dependency to your game. You
 
 `clockwork add keyboard`
 
-Once you have added the dependency, you just need to spawn a `keyboard` object in any level you want to depect keyboard input. Add it to the level like this:
+Once you have added the dependency, you just need to spawn a `keyboard` object in any level you want to detect keyboard input. Add it to the level like this:
 
 {% highlight xml %}
 <object name="keyboard" type="keyboard" x="0" y="0" ></object>
