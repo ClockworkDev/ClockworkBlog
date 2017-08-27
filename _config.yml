@@ -11,7 +11,7 @@ email: clockwork.dev@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   The official blog for the Clockwork game development platform. 
   Learn how to make awesome modular multiplatform games using JavaScript.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ClockworkBlog" # the subpath of your site, e.g. /blog
 url: "https://clockworkdev.github.io/ClockworkBlog" # the base hostname & protocol for your site
 twitter_username: clockworkjs
 github_username:  ClockworkDev
