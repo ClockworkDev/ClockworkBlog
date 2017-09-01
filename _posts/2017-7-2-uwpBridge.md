@@ -3,7 +3,7 @@ layout: post
 title: "UWP Bridge"
 date: 2017-7-3 18:00:00 +0200
 author: silvia
-categories: bridges uwp universal windows platform store visual studio
+categories: bridges tutorial
 heropic: /pictures/uwp.png
 ---
 

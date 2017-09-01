@@ -3,7 +3,7 @@ layout: post
 title: "Web Bridge"
 date: 2017-7-2 19:49:11 +0200
 author: silvia
-categories: bridges web
+categories: bridges tutorial
 heropic: /pictures/azureweb.PNG
 ---
 
